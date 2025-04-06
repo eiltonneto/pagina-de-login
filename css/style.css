@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos gerais */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Caixa de  login */
+.login-container{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0, 0.2 );
+    text-align: center;
+    width:310px;
+    height: 685px;
+}
+
+.logo{
+   width: 280px;
+   margin-bottom: 0px;
+   margin-block: 10px;
+   margin-top: -10px;
+}
+
+/* Título */
+.login-container h2{
+    margin-bottom: 30px;
+}
+
+h2:first-of-type{
+    margin-top: -50px;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 15px;
+    background-color:#1e3c72 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Botão */
+button{
+    width: 100%;
+    padding: 15px;
+    background-color:  #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#2a5298;
+}
+
+.hidden{
+    display: none;
+    color: rgb(255, 187, 0);
+    margin-top: 10px;
+
+}
+
+#error-message{
+    color: rgb(255, 149, 0);
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    margin-bottom: auto;
+    margin-block: 30px;
+}
+
+#sucess-message { 
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
