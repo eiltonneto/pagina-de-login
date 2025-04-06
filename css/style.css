@@ -27,6 +27,7 @@ body {
 
 .logo{
    width: 280px;
+   display: flex;
    margin-bottom: 0px;
    margin-block: 10px;
    margin-top: -10px;
@@ -96,3 +97,74 @@ button:hover{
     flex-direction: column;
     gap: 15px;
 }
+
+/* Estilos base (mobile first) já estão definidos no seu código acima */
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+  
+  /* Telas maiores que 480px - Ex: celulares grandes */
+  @media (min-width: 481px) {
+    .login-container {
+      width: 350px;
+      padding: 20px;
+    }
+  
+    .logo {
+      max-width: 250px;
+    }
+  
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Telas maiores que 768px - Ex: tablets */
+  @media (min-width: 769px) {
+    .login-container {
+      width: 400px;
+      padding: 25px;
+    }
+  
+    .logo {
+      max-width: 280px;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  
+    input, button {
+      font-size: 1rem;
+      padding: 15px;
+    }
+  }
+  
+  /* Telas maiores que 1024px - Ex: notebooks e desktops */
+  @media (min-width: 1025px) {
+    .login-container {
+      width: 450px;
+      height: auto;
+      padding: 30px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .logo {
+      max-width: 300px;
+    }
+  
+    input, button {
+      font-size: 1.1rem;
+      padding: 18px;
+    }
+  }
+  
